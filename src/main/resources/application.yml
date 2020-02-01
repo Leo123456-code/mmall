@@ -1,0 +1,27 @@
+spring:
+  applicaion:
+    name: mmall
+
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+server:
+  port: 8080
+
+
+
+
+#mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
